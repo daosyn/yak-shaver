@@ -32,3 +32,18 @@ li:before {
 	text-transform: lowercase;
 }
 
+.category {
+	color: #aaaaaa;
+	font-style: italic;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+body {
+	background: #f0f0f3;
+	color: #444455;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	line-height: 2em;
+	font-family: 'Mate', serif;
+}
