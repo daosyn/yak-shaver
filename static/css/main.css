@@ -1,69 +1,127 @@
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:link {
-    color: black;
+  color: black;
 }
 
 a:visited {
-    color: black;
+  color: black;
 }
 
 a:hover {
-    color: red;
+  color: red;
 }
 
 a:active {
-    color: hotpink;
+  color: hotpink;
 }
 
-ul {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 1;
+.list-item {
+  height: auto;
+  overflow: hidden;
 }
-
-li {
-	padding-left: 1em;
-	text-indent: -1em;
+.list-left:before {
+  content: "\00BB";
+  color: #666677;
+  margin-left: -1.4em;
+  margin-right: 0.6em;
 }
-
-li:before {
-	content: "»";
-	padding-right: 5px;
+.list-left {
+  float: none;
+  width: auto;
+  padding-left: 1.6em;
+  overflow: hidden;
+  text-align: left;
+}
+.list-date {
+  text-align: right;
+  float: right;
+  width: 100px;
+  font-size: 14px;
+  margin-left: 0.5em;
+  color: #999999;
+  text-transform: lowercase;
 }
 
 #content {
-	max-width: 70%;
-	margin: 0 auto;
-	padding: 1em;
-	padding-top: 0;
-	text-align: justify;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 1em;
+  padding-top: 0;
+  text-align: justify;
 }
 
 .list-date {
-	text-align: right;
-	float: right;
-	width: 100px;
-	font-size: 14px;
-	margin-left: 0.5em;
-	color: #999999;
-	text-transform: lowercase;
+  text-align: right;
+  float: right;
+  width: 100px;
+  font-size: 14px;
+  margin-left: 0.5em;
+  color: #999999;
+  text-transform: lowercase;
 }
 
 .category {
-	color: #aaaaaa;
-	font-style: italic;
-	font-size: 14px;
-	margin-left: 10px;
+  color: #aaaaaa;
+  font-style: italic;
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 body {
-	background: #f0f0f3;
-	color: #444455;
-	margin-top: 2em;
-	margin-bottom: 3em;
-	line-height: 2em;
-	font-family: 'Mate', serif;
+  background: #f0f0f3;
+  color: #444455;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  line-height: 2em;
+}
+
+#title {
+  color: #444455;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+#header {
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  position: absolute;
+}
+nav {
+  float: right;
+  display: block;
+  margin-top: -15px;
+  margin-right: 35px;
+}
+nav:after {
+  clear: both;
+}
+nav ul li {
+  display: inline;
+  position: relative;
+  margin-left: 10px;
+}
+nav ul li a {
+  font-size: 14px;
+  font-weight: bold;
+}
+nav ul li a {
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+nav ul li a:hover {
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
