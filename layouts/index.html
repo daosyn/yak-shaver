@@ -6,7 +6,7 @@
   {{ range $taxonomy, $categories := .Site.Taxonomies }}
     {{ if eq "categories" $taxonomy }}
       {{ range $key, $value := $categories }}
-        <div>{{ $key }}</div>
+        <h2>{{ $key }}</h2>
         <ul>
         {{ range $value.Pages }}
           {{ .Render "li" }}

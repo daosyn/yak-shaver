@@ -125,3 +125,10 @@ nav ul li a:hover {
   -ms-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
+h2 {
+  font-size: 20px;
+  margin-left: 0.0em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 0.08em #cccccc solid;
+}
