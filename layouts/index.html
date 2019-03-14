@@ -1,4 +1,19 @@
 {{ define "main" }}
-	{{ .Render "list" }}
+  <div id="title">
+  {{ .Title }}
+  </div>
+  <div id="content">
+  {{ range $taxonomy, $categories := .Site.Taxonomies }}
+    {{ if eq "categories" $taxonomy }}
+      {{ range $key, $value := $categories }}
+        <div>{{ $key }}</div>
+        <ul>
+        {{ range $value.Pages }}
+          {{ .Render "li" }}
+        {{ end }}
+        </ul>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  </div>
 {{ end }}
-
