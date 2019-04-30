@@ -1,5 +1,12 @@
-<ul>
-{{ range .Pages }}
-  {{ .Render "li" }}
+{{ define "main" }}
+<div id="title">
+{{ .Title }}
+</div>
+<div id="content">
+  <ul>
+  {{ range .Pages }}
+    {{ .Render "li" }}
+  {{ end }}
+  </ul>
+</div>
 {{ end }}
-</ul>
